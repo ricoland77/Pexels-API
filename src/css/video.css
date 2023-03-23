@@ -1,0 +1,95 @@
+.All-videos {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.video {
+  width: 450px;
+  height: 260px;
+  position: relative;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: container;
+}
+
+.download-video {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 15px;
+  right: 205px;
+}
+
+.download-video {
+  display: none;
+}
+
+.download-video:hover {
+  display: block;
+}
+
+.video:hover {
+  cursor: pointer;
+}
+
+/* ****************************** */
+/**** MEDIAS QUERIES 200 > 425 ****/
+/* ****************************** */
+@media (min-width: 200px) and (max-width: 425px) {
+  h2 {
+    font-size: 20px;
+    padding-left: 5vw;
+  }
+
+  .All-videos {
+    grid-template-columns: 90vw;
+    justify-content: center;
+  }
+
+  .video {
+    width: 90vw;
+  }
+}
+
+/* ****************************** */
+/**** MEDIAS QUERIES 426 > 768 ****/
+/* ****************************** */
+@media (min-width: 426px) and (max-width: 768px) {
+  h2 {
+    padding-left: 3vw;
+  }
+
+  .All-videos {
+    grid-template-columns: 45vw 45vw;
+    justify-content: center;
+  }
+
+  .video {
+    width: 45vw;
+  }
+}
+
+/* ****************************** */
+/**** MEDIAS QUERIES 769 > 1440 ***/
+/* ****************************** */
+@media (min-width: 769px) and (max-width: 1440px) {
+  h2 {
+    padding-left: 2vw;
+  }
+
+  .All-videos {
+    padding: 2vw;
+    grid-gap: 2vw;
+  }
+
+  .video {
+    width: 30.3vw;
+  }
+}

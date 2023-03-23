@@ -1,0 +1,115 @@
+.container-photo {
+  /* border: 1px solid green; */
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-photo-text {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.detail-photo-text a {
+  font-size: 30px;
+  color: #04a081;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.detail-photo-text span {
+  font-size: 30px;
+  color: rgb(225, 225, 225);
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.detail-photo-text a:hover {
+  font-size: 30px;
+  color: white;
+  background-color: rgb(225, 225, 225);
+  transition: 0.5s;
+}
+
+.detail-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-btn {
+  border: none;
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  font-weight: 200;
+  margin-top: 30px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  background: linear-gradient(#08e6b9, #04a081);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-btn:hover {
+  font-size: 19px;
+  background: linear-gradient(#04a081, #08e6b9);
+  transition: 0.3s;
+}
+
+.detail-photo img {
+  width: 90vw;
+}
+
+.download {
+  height: 25px;
+}
+
+/* ****************************** */
+/**** MEDIAS QUERIES 200 > 768 ****/
+/* ****************************** */
+@media (min-width: 200px) and (max-width: 768px) {
+  .detail-photo-text {
+    width: 70vw;
+    flex-direction: column;
+  }
+
+  .detail-photo-text a {
+    padding: 5px;
+    font-size: 30px;
+  }
+
+  .detail-photo-text span {
+    padding: 5px;
+    font-size: 30px;
+  }
+}
+
+/* ****************************** */
+/**** MEDIAS QUERIES 769 > 2560 ***/
+/* ****************************** */
+@media (min-width: 769px) and (max-width: 2560px) {
+  .detail-photo img {
+    width: 600px;
+    transition: 0.35s;
+  }
+
+  .detail-photo img:hover {
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    margin: 450px;
+    cursor: zoom-in;
+  }
+}

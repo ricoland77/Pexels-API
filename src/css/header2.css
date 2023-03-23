@@ -1,0 +1,134 @@
+.all-header-one2 {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.all-header2 {
+  /* border: 1px solid red; */
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.sticky {
+  display: none;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-pexels2 {
+  /* border: 1px solid white; */
+  height: 50px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  flex: 1;
+}
+
+.logo-pexels2 img {
+  height: 50px;
+}
+
+.filter-search2 {
+  width: 60%;
+  height: 40px;
+  border-radius: 10px;
+  padding: 5px 5px 5px 35px;
+  border: none;
+  outline: none;
+  background-image: url("../images/search.png");
+  background-size: 20px;
+  background-position: 10px 11px;
+  background-repeat: no-repeat;
+}
+
+.filter-search2[type="search"]::-webkit-search-cancel-button {
+  opacity: 25%;
+  position: relative;
+  right: 10px;
+}
+
+.top-nav2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  margin-left: 40px;
+}
+
+.text-nav2 li {
+  color: white;
+}
+
+/* ****************************** */
+/**** MEDIAS QUERIES 200 > 425 ****/
+/* ****************************** */
+@media (min-width: 200px) and (max-width: 425px) {
+  .all-header2 {
+    padding: 10px 10px;
+  }
+
+  .top-nav2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    margin-left: 15px;
+  }
+
+  .logo-pexels2 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .logo-pexels2 img {
+    height: 30px;
+  }
+
+  .filter-search2 {
+    width: 100%;
+  }
+}
+
+/* ****************************** */
+/**** MEDIAS QUERIES 426 > 768 ****/
+/* ****************************** */
+@media (min-width: 426px) and (max-width: 768px) {
+  .all-header2 {
+    padding: 10px 10px;
+  }
+
+  .top-nav2 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    margin-left: 15px;
+  }
+
+  .logo-pexels2 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .logo-pexels2 img {
+    height: 30px;
+  }
+
+  .filter-search2 {
+    width: 100%;
+  }
+}

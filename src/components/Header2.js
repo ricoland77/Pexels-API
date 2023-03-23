@@ -31,7 +31,7 @@ const Header2 = ({ search, setSearch }) => {
           <div className="container2">
             <div className="header2">
               <div className="logo-pexels2">
-                <a href="https://www.pexels.com" target="blank">
+                <a href="/" target="blank">
                   <img src={logo} alt="logo Pexels" />
                 </a>
                 <input

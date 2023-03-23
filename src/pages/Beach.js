@@ -64,7 +64,6 @@ const Beach = ({ search, setSearch, page, setPage }) => {
   return isLoading ? (
     <div className="container-loader">
       <p>Loading...</p>
-      {/* <img className="loader" src={loader} alt="Gif de chargement" /> */}
     </div>
   ) : (
     <>

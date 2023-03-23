@@ -32,7 +32,6 @@ const Home = ({ search, setSearch, page, setPage }) => {
         );
         setData(response.data);
         setIsLoading(false);
-        console.log("ok...", response.data);
       } catch (error) {
         res.status(400).json(error.message);
       }
@@ -54,7 +53,6 @@ const Home = ({ search, setSearch, page, setPage }) => {
         );
         setData(response.data);
         setIsLoading(false);
-        // console.log(response.data);
       } catch (error) {
         console.log(error.response);
       }
@@ -90,8 +88,6 @@ const Home = ({ search, setSearch, page, setPage }) => {
         </div>
         <div className="All-photos">
           {data.photos.map((photo) => {
-            // console.log(photo);
-
             const downloadImage = () => {
               saveAs(photo.src.original, `${photo.photographer}©.jpeg`);
             };

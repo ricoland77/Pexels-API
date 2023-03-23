@@ -31,7 +31,6 @@ const Nature = ({ search, setSearch, page, setPage }) => {
         );
         setData(response.data);
         setIsLoading(false);
-        console.log("ok...", response.data);
       } catch (error) {
         res.status(400).json(error.message);
       }
@@ -53,7 +52,6 @@ const Nature = ({ search, setSearch, page, setPage }) => {
         );
         setData(response.data);
         setIsLoading(false);
-        // console.log(response.data);
       } catch (error) {
         console.log(error.response);
       }
@@ -64,7 +62,6 @@ const Nature = ({ search, setSearch, page, setPage }) => {
   return isLoading ? (
     <div className="container-loader">
       <p>Loading...</p>
-      {/* <img className="loader" src={loader} alt="Gif de chargement" /> */}
     </div>
   ) : (
     <>
@@ -89,8 +86,6 @@ const Nature = ({ search, setSearch, page, setPage }) => {
         </div>
         <div className="All-photos">
           {data.photos.map((photo) => {
-            // console.log(photo);
-
             const downloadImage = () => {
               saveAs(photo.src.original, `${photo.photographer}©.jpeg`);
             };

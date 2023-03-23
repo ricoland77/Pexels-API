@@ -27,7 +27,6 @@ const BeachVideos = ({ search, setSearch, page, setPage }) => {
         );
         setData(response.data);
         setIsLoading(false);
-        console.log("ok...", response.data);
       } catch (error) {
         res.status(400).json(error.message);
       }
@@ -49,7 +48,6 @@ const BeachVideos = ({ search, setSearch, page, setPage }) => {
         );
         setData(response.data);
         setIsLoading(false);
-        console.log(response.data);
       } catch (error) {
         console.log(error.response);
       }

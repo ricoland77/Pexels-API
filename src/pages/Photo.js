@@ -28,7 +28,6 @@ const Photo = ({ search, setSearch }) => {
         );
         setData(response.data);
         setIsLoading(false);
-        console.log("ok photo", response.data);
       } catch (error) {
         console.log(error.response);
       }

@@ -29,7 +29,6 @@ const Videos = ({ search, setSearch, page, setPage }) => {
         );
         setData(response.data);
         setIsLoading(false);
-        // console.log("ok1...", response.data);
       } catch (error) {
         res.status(400).json(error.message);
       }
@@ -51,7 +50,6 @@ const Videos = ({ search, setSearch, page, setPage }) => {
         );
         setData(response.data);
         setIsLoading(false);
-        // console.log("ok2...", response.data);
       } catch (error) {
         console.log(error.response);
       }
@@ -87,8 +85,6 @@ const Videos = ({ search, setSearch, page, setPage }) => {
 
         <div className="All-videos">
           {data.videos.map((video) => {
-            console.log(video);
-
             return (
               <div key={video.id}>
                 {video.video_files

@@ -7,7 +7,6 @@ import Header2 from "../components/Header2";
 import MyPagination from "../components/MyPagination";
 
 import downloadPicto from "../images/download.svg";
-import favoritPicto from "../images/heart.svg";
 
 const Coffee = ({ search, setSearch, page, setPage }) => {
   const [data, setData] = useState();
@@ -103,13 +102,6 @@ const Coffee = ({ search, setSearch, page, setPage }) => {
                     alt="download picto"
                     onClick={downloadImage}
                   />
-                  <div className="show-me">
-                    <img
-                      className="favorit-picto"
-                      src={favoritPicto}
-                      alt="favorit picto"
-                    />
-                  </div>
                 </div>
                 <div className="show-me">
                   <a

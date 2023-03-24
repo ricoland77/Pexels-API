@@ -127,11 +127,7 @@
 
 .all-trend {
   width: 100%;
-  text-align: right;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  text-align: center;
 }
 
 .first-word,
@@ -151,45 +147,16 @@
   color: white;
 }
 
-.copyright-header {
-  font-size: 14px;
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
-}
-
-.copyright-header a {
-  color: white;
-}
-
-.photo-by {
-  color: rgb(218, 218, 218);
-}
-
-.more {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.35);
-  gap: 3px;
-}
-
-.more-round {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: white;
-}
-
 /* ****************************** */
 /********* MEDIAS QUERIES *********/
 /* ****************************** */
 @media (max-width: 320px) {
+  .logo-pexels {
+    margin-right: 30px;
+  }
+
   .top-nav {
-    gap: 15px;
+    gap: 0px;
   }
 
   .all-searches {
@@ -202,10 +169,6 @@
     font-size: 30px;
     line-height: 34px;
     font-weight: 400;
-  }
-
-  .copyright-header {
-    font-size: 12px;
   }
 }
 
@@ -224,10 +187,6 @@
     font-size: 32px;
     line-height: 36px;
     font-weight: 400;
-  }
-
-  .copyright-header {
-    font-size: 12px;
   }
 }
 
@@ -253,9 +212,5 @@
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.3px;
-  }
-
-  .copyright-header {
-    font-size: 12px;
   }
 }

@@ -114,13 +114,6 @@ const HeaderVideo = ({ search, setSearch }) => {
                   <span className="second-word">fleur</span>
                 </Link>
               </div>
-              <div className="more-trends">
-                <div className="more">
-                  <div className="more-round"></div>
-                  <div className="more-round"></div>
-                  <div className="more-round"></div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

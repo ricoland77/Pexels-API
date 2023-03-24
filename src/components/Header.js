@@ -104,13 +104,7 @@ const Header = ({ search, setSearch }) => {
             alt=""
           />
         </Carousel>
-        {/* <div className="all-top-image">
-          <img
-            className="top-image"
-            src="https://res.cloudinary.com/dvfsuflfr/image/upload/v1677504979/Pexels/pexels-kelly-2519392_t7bifl.jpg"
-            alt=""
-          />
-        </div> */}
+
         <div className="top-search">
           <div className="all-searches">
             <h1 className="header-baseline">
@@ -145,13 +139,6 @@ const Header = ({ search, setSearch }) => {
                 <Link to="/search/flower">
                   <span className="second-word">fleur</span>
                 </Link>
-              </div>
-              <div className="more-trends">
-                <div className="more">
-                  <div className="more-round"></div>
-                  <div className="more-round"></div>
-                  <div className="more-round"></div>
-                </div>
               </div>
             </div>
           </div>

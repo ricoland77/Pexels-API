@@ -12,10 +12,6 @@ const Beach = ({ search, setSearch, page, setPage }) => {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
-  const refreshPage = () => {
-    window.location.reload(false);
-  };
-
   useEffect(() => {
     const fetchData = async (req, res) => {
       try {
@@ -66,18 +62,8 @@ const Beach = ({ search, setSearch, page, setPage }) => {
     <>
       <Header search={search} setSearch={setSearch} />
       <Header2 search={search} setSearch={setSearch} />
-      <div className="container">
-        <div className="all-bottom-nav">
-          <div className="bottom-nav" onClick={refreshPage}>
-            <Link className="button-nav" to="/">
-              Accueil
-            </Link>
-            <Link className="button-nav" to="/videos">
-              Vidéos
-            </Link>
-          </div>
-        </div>
 
+      <div className="container">
         <MyPagination page={page} setPage={setPage} />
 
         <div>

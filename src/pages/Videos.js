@@ -1,7 +1,6 @@
 import "../css/home.css";
 import "../css/video.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MyPagination from "../components/MyPagination";
 import HeaderVideo from "../components/HeaderVideo";
@@ -10,10 +9,6 @@ import Header2 from "../components/Header2";
 const Videos = ({ search, setSearch, page, setPage }) => {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
-
-  const refreshPage = () => {
-    window.location.reload(false);
-  };
 
   useEffect(() => {
     const fetchData = async (req, res) => {
@@ -66,17 +61,6 @@ const Videos = ({ search, setSearch, page, setPage }) => {
       <HeaderVideo search={search} setSearch={setSearch} />
       <Header2 search={search} setSearch={setSearch} />
       <div className="container">
-        <div className="all-bottom-nav">
-          <div className="bottom-nav" onClick={refreshPage}>
-            <Link className="button-nav" to="/">
-              Accueil
-            </Link>
-            <Link className="button-nav" to="/videos">
-              Vidéos
-            </Link>
-          </div>
-        </div>
-
         <MyPagination page={page} setPage={setPage} />
 
         <div>

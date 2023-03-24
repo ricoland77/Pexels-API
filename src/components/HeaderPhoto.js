@@ -17,7 +17,7 @@ const HeaderPhoto = () => {
           <div className="container">
             <div className="header">
               <div className="logo-pexels">
-                <a href="https://www.pexels.com" target="blank">
+                <a href="/" target="blank">
                   <img src={logo} alt="logo Pexels" />
                 </a>
               </div>

@@ -117,7 +117,7 @@ const Header = ({ search, setSearch }) => {
               value={search}
               type="search"
               name="search"
-              placeholder="Search for free photos"
+              placeholder="Search for free videos"
               onChange={handleSearchChange}
             />
 
